@@ -1,0 +1,21 @@
+.big-div {
+  /* border: 1px solid black; */
+  height: 200px;
+}
+
+#countLabel {
+  font-size: 10em;
+}
+
+.button {
+  height: 50px;
+  width: 100px;
+  background-color: rgba(0, 0, 255, 0.602);
+  border: none;
+  color: white;
+}
+
+.button:hover {
+  background-color: blue;
+  transition: 0.1s ease;
+}
