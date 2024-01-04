@@ -1,5 +1,5 @@
 const minNumb = 1;
-const maxNumb = 100;
+const maxNumb = 10;
 
 const randomNumb = Math.floor(Math.random() * (maxNumb - minNumb + 1));
 const guess = document.querySelector("#number-input");
