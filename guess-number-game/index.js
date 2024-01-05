@@ -22,7 +22,6 @@ console.log(tries.textContent)
 console.log(numberGuessed);
 console.log(randomNumb);
 
-
 const youWon = () => {
   console.log("it's working!");
   guess.remove();
@@ -38,7 +37,7 @@ const youWon = () => {
 const youLost = () => {
   guess.remove();
   button.remove();
-  text.textContent = gameOver;
+  swal(gameOver);
   div.insertAdjacentHTML("beforeend", newGame);
   const anotherGame = document.querySelector("#new-game-button");
   anotherGame.addEventListener("click", () => {
@@ -86,7 +85,7 @@ button.addEventListener("click", () => {
   console.log(count);
   attempts(count);
   if (count < 3 && isNaN(number)) {
-    alert("You need to put a number!");
+    swal("You need to put a number!");
     console.log("You need to put a number!");
   } else if (count <= 3 && number < randomNumb) {
     higher();
