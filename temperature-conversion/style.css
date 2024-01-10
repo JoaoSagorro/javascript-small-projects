@@ -1,3 +1,14 @@
-.div-border {
+/* .div-border {
   border: 1px solid black;
+} */
+
+.main-div {
+  background-color: white;
+  height: 400px;
+}
+
+.temperature-show {
+  max-width: 150px;
+  height: 150px;
+  border-radius: 50%;
 }
